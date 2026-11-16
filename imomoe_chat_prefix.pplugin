@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/tags/v3.1.0/schemas/plugin.schema.json",
+  "version": "0.1.0",
+  "name": "imomoe_chat_prefix",
+  "description": "Shared configurable chat prefix for CS2 plugins",
+  "author": "Mai Ooizumi",
+  "website": "https://github.com/Mai-Ooizumi",
+  "license": "AGPL-3.0-or-later",
+  "entry": "bin/imomoe_chat_prefix",
+  "language": "rust",
+  "dependencies": [
+    { "name": "s2sdk", "constraints": ">=3.4.0" }
+  ],
+  "methods": [
+    {
+      "name": "GetChatPrefix",
+      "funcName": "GetChatPrefix",
+      "description": "Select and copy one configured CS2 chat prefix into out, including color reset and separator. Call once per message and reuse for every broadcast recipient. False means unavailable and leaves out unchanged.",
+      "paramTypes": [
+        { "name": "out", "type": "string", "ref": true }
+      ],
+      "retType": { "type": "bool" }
+    }
+  ]
+}

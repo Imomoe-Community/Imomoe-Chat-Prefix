@@ -1,0 +1,24 @@
+[package]
+name = "imomoe-chat-prefix"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "AGPL-3.0-or-later"
+description = "Shared configurable chat prefixes for CS2 Plugify plugins"
+authors = ["Mai Ooizumi <https://github.com/Mai-Ooizumi>"]
+repository = "https://github.com/Imomoe-Community/Imomoe-Chat-Prefix"
+readme = "README.md"
+keywords = ["cs2", "plugify", "counter-strike-2", "chat", "s2sdk"]
+categories = ["games"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+plugify = { git = "https://github.com/untrustedmodders/rust-plugify", rev = "5f7d5f4f2821dd3e47a4254d2bfe1db6ec08c9aa" }
+rand = { version = "=0.10.3", features = ["unbiased"] }
+serde = { version = "1", features = ["derive"] }
+toml = "1"
+
+[profile.release]
+panic = "unwind"

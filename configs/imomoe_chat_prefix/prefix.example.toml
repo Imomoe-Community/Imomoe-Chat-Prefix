@@ -1,0 +1,19 @@
+# Copy this file to prefix.toml in the server's Plugify configs/imomoe_chat_prefix directory.
+# Edit the text and CS2 color tags, then run imomoe_chat_prefix_reload in the server console.
+#
+# Rules:
+# - Must be a single line (no newlines or control characters) with visible text.
+# - Compiled wire length (including leading space, \x01 reset, and trailing space) <= 96 bytes.
+# - Supported tags: {default} {darkred} {purple} {green} {olive} {lime} {red} {grey}
+#                   {yellow} {bluegrey} {blue} {darkblue} {grey2} {orchid} {lightred} {gold}
+# - The plugin automatically adds leading/trailing spacing and resets color to {default}.
+#
+# For one fixed style, replace the array with a single string:
+# prefix = "{grey}[{gold}Community{grey}]"
+
+# Each new message draws one style at random. A broadcast shares the draw.
+prefix = [
+  "{grey}[{gold}Community{grey}]",
+  "{blue}[{green}Community{blue}]",
+  "{red}【{yellow}Community{red}】",
+]
