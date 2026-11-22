@@ -1,37 +1,36 @@
 ---
-name: Bug Report
-about: 提交缺陷或意外行为反馈
+name: Bug Report / 问题反馈
+about: Report a bug or unexpected behavior / 提交缺陷或意外行为反馈
 title: '[BUG] '
 labels: ['bug']
 assignees: ''
 ---
 
-### 问题描述
+### Description / 问题描述
+Clearly and concisely describe the bug or unexpected behavior.
 清晰简要地描述遇到的问题或异常表现。
 
-### 运行环境
-- 操作系统平台: [Windows / Linux]
-- CS2 游戏版本: 
-- Plugify 版本: 
-- S2SDK 版本: 
-- `imomoe_chat_prefix` 版本 / commit: 
+### Environment / 运行环境
+- OS / 操作系统平台: [Windows / Linux]
+- CS2 Build:
+- Plugify Version:
+- S2SDK Version:
+- `imomoe_chat_prefix` Version / Commit:
 
-### 复现步骤
-1. 配置 `prefix.toml` ...
-2. 执行操作（例如运行 `imomoe_chat_prefix_reload` 或调用 `GetChatPrefix`）...
-3. 观察输出或日志 ...
+### Steps to Reproduce / 复现步骤
+1. Configure `prefix.toml` ...
+2. Run `imomoe_chat_prefix_reload` or invoke `GetChatPrefix` ...
+3. Observe output or logs ...
 
-### 预期行为
-描述您预期的正常行为。
+### Expected vs Actual Behavior / 预期与实际行为
+Describe expected vs actual behavior (attach sanitized `plugify.log` snippets without sensitive data).
+描述预期行为与实际结果（请先剔除敏感信息）。
 
-### 实际行为
-描述实际发生的情况（附带服务端控制台输出或 `plugify.log` 中相关日志，请先剔除敏感信息）。
-
-### 相关配置
+### Config Snippet / 相关配置
 <details>
-<summary><code>configs/imomoe_chat_prefix/prefix.toml</code> 片段</summary>
+<summary><code>configs/imomoe_chat_prefix/prefix.toml</code> (sanitized / 脱敏片段)</summary>
 
 ```toml
-# 粘贴脱敏后的相关配置
+# Paste sanitized config here
 ```
 </details>
